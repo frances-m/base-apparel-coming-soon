@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, white, #fff5f5);
+}
+
+header {
+  height: 22.2vw;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header img {
+  height: 6vw;
+  padding-left: 8vw;
+}
+
+.site-hero {
+  background-image: url(./../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 66.66vw;
+}
+
+main h1 {
+  margin: 0 auto;
+  margin-top: 17vw;
+  margin-bottom: 4.4vw;
+  font-size: 10.4vw;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+  color: #ce9797;
+  letter-spacing: 2.66vw;
+  line-height: 11.2vw;
+}
+main h1 strong {
+  font-weight: 600;
+  color: #413a3a;
+}
+main p {
+  margin: 0 auto;
+  font-size: 3.7vw;
+  font-weight: 400;
+  line-height: 5.7vw;
+  color: #ce9797;
+  text-align: center;
+  width: 82%;
+  margin-bottom: 8.9vw;
+}
+main form {
+  margin: 0 auto;
+  padding-bottom: 13.33vw;
+  display: flex;
+}
+main form input {
+  margin: 0 auto;
+  height: 12.7vw;
+  width: 78%;
+  border: 0.5px solid #ce9797;
+  border-radius: 6.6vw;
+  color: #ce9797;
+  background-color: transparent;
+  padding-left: 6vw;
+  font-size: 4vw;
+}
+main form input:focus {
+  outline: 1px outset #ce9797;
+}
+main form button {
+  position: absolute;
+  display: inline;
+  right: 6.66vw;
+  height: 12.7vw;
+  width: 16vw;
+  background-image: url(./../images/icon-arrow.svg), linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 6.6vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+main form button:focus-visible {
+  outline: 3px outset #ce9797;
+}
+
+.attribution {
+  font-size: 3vw;
+  text-align: center;
+  color: #413a3a;
+  padding-bottom: 5vw;
+}
+.attribution a {
+  color: #f96262;
+}
+
+/*# sourceMappingURL=main.css.map */

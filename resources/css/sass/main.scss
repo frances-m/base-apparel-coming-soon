@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import "util/variables";
+@import "util/placeholders";
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: $gradient-bg;
+}
+
+header {
+  height: 22.2vw;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  img {
+    height: 6vw;
+    padding-left: 8vw;
+  }
+}
+
+.site-hero {
+  background-image: url(./../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 66.66vw;
+}
+
+main {
+
+  h1 {
+    margin: 0 auto;
+    margin-top: 17vw;
+    margin-bottom: 4.4vw;
+    font-size: 10.4vw;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    color: $desaturated-red;
+    letter-spacing: 2.66vw;
+    line-height: 11.2vw;
+
+    strong {
+      font-weight: 600;
+      color: $dark-red;
+    }
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 3.7vw;
+    font-weight: 400;
+    line-height: 5.7vw;
+    color: $desaturated-red;
+    text-align: center;
+    width: 82%;
+    margin-bottom: 8.9vw;
+  }
+
+  form {
+    margin: 0 auto;
+    padding-bottom: 13.33vw;
+    display: flex;
+
+    input {
+      margin: 0 auto;
+      height: 12.7vw;
+      width: 78%;
+      border: .5px solid $desaturated-red;
+      border-radius: 6.6vw;
+      color: $desaturated-red;
+      background-color: transparent;
+      padding-left: 6vw;
+      font-size: 4vw;
+
+      &:focus {
+        outline: 1px outset $desaturated-red;
+      }
+
+
+    }
+
+    button {
+      position: absolute;
+      display: inline;
+      right: 6.66vw;
+      height: 12.7vw;
+      width: 16vw;
+      background-image: url(./../images/icon-arrow.svg), $gradient-button;
+      border: none;
+      border-radius: 6.6vw;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      &:focus-visible {
+        outline: 3px outset $desaturated-red;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 3vw;
+  text-align: center;
+  color: $dark-red;
+  padding-bottom: 5vw;
+
+  a {
+    color: $soft-red;
+  }
+}
