@@ -111,12 +111,118 @@ main {
 }
 
 .attribution {
-  font-size: 3vw;
+  font-size: 3.6vw;
+  width: 100%;
+  background-color: hsla(0, 100%, 100%, 80%);
+  position: fixed;
+  bottom: 0rem;
   text-align: center;
   color: $dark-red;
-  padding-bottom: 5vw;
+  padding: 3vw 0;
 
   a {
     color: $soft-red;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1030px) {
+  body {
+    display: grid;
+    grid-template-columns: 57.5vw 42.5vw;
+    grid-template-rows: 20vh 75vh 5vh;
+    background-image: none;
+  }
+
+  header {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: auto;
+    background-color: transparent;
+
+    img {
+      height: 2.3vw;
+      padding-top: 0;
+      padding-left: 11.4vw;
+    }
+  }
+
+  .site-hero {
+    background-image: url(./../images/hero-desktop.jpg);
+    width: auto;
+    height: auto;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+  }
+
+  .background {
+    background-image: url(./../images/bg-pattern-desktop.svg), $gradient-bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+  }
+
+  main {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding-left: 11.4vw;
+    width: 82%;
+
+    h1 {
+      margin: 0;
+      margin-top: 6vw;
+      margin-bottom: 0;
+      font-size: 4.4vw;
+      width: 20vw;
+      letter-spacing: 1vw;
+      line-height: 4.5vw;
+      text-align: left;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 0;
+      margin-top: 1.5vw;
+      font-size: 1.1vw;
+      line-height: 2vw;
+      text-align: left;
+    }
+
+    form {
+      margin: 0;
+      margin-top: 3vw;
+      padding-bottom: 0;
+      display: block;
+
+      input {
+        height: 4vw;
+        padding-left: 2vw;
+        font-size: 1.2vw;
+        width: 80%;
+      }
+
+      button {
+        left: 35vw;
+        height: 4vw;
+        width: 7vw;
+      }
+    }
+  }
+
+  footer {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+
+    .attribution {
+      font-size: 1rem;
+      position: static;
+      background-color: transparent;
+      bottom: 0;
+      padding: 0;
+    }
   }
 }

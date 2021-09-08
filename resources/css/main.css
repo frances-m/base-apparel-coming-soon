@@ -95,13 +95,111 @@ main form button:focus-visible {
 }
 
 .attribution {
-  font-size: 3vw;
+  font-size: 3.6vw;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0rem;
   text-align: center;
   color: #413a3a;
-  padding-bottom: 5vw;
+  padding: 3vw 0;
 }
 .attribution a {
   color: #f96262;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1030px) {
+  body {
+    display: grid;
+    grid-template-columns: 57.5vw 42.5vw;
+    grid-template-rows: 20vh 75vh 5vh;
+    background-image: none;
+  }
+
+  header {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    height: auto;
+    background-color: transparent;
+  }
+  header img {
+    height: 2.3vw;
+    padding-top: 0;
+    padding-left: 11.4vw;
+  }
+
+  .site-hero {
+    background-image: url(./../images/hero-desktop.jpg);
+    width: auto;
+    height: auto;
+    grid-column: 2/span 1;
+    grid-row: 1/span 3;
+  }
+
+  .background {
+    background-image: url(./../images/bg-pattern-desktop.svg), linear-gradient(135deg, white, #fff5f5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    grid-column: 1/span 1;
+    grid-row: 1/span 3;
+  }
+
+  main {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    padding-left: 11.4vw;
+    width: 82%;
+  }
+  main h1 {
+    margin: 0;
+    margin-top: 6vw;
+    margin-bottom: 0;
+    font-size: 4.4vw;
+    width: 20vw;
+    letter-spacing: 1vw;
+    line-height: 4.5vw;
+    text-align: left;
+  }
+  main p {
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 1.5vw;
+    font-size: 1.1vw;
+    line-height: 2vw;
+    text-align: left;
+  }
+  main form {
+    margin: 0;
+    margin-top: 3vw;
+    padding-bottom: 0;
+    display: block;
+  }
+  main form input {
+    height: 4vw;
+    padding-left: 2vw;
+    font-size: 1.2vw;
+    width: 80%;
+  }
+  main form button {
+    left: 35vw;
+    height: 4vw;
+    width: 7vw;
+  }
+
+  footer {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+  footer .attribution {
+    font-size: 1rem;
+    position: static;
+    background-color: transparent;
+    bottom: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
