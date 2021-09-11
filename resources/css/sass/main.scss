@@ -127,11 +127,16 @@ main {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 600px) {
+  html {
+    min-height: 100vh;
+    width: 100vw;
+  }
+
   body {
     display: grid;
-    grid-template-columns: 57.5vw 42.5vw;
-    grid-template-rows: 20vh 75vh 5vh;
+    grid-template-columns: 2.2fr 1.8fr;
+    grid-template-rows: .8fr 3fr .2fr;
     background-image: none;
   }
 
@@ -221,8 +226,9 @@ main {
       font-size: 1rem;
       position: static;
       background-color: transparent;
-      bottom: 0;
-      padding: 0;
+      text-align: center;
+      padding: 1vw 0;
+      width: auto;
     }
   }
 }
